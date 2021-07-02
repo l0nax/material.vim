@@ -538,6 +538,33 @@ call s:SetHighlight('CocWarningSign', s:orange, '', '')
 call s:SetHighlight('CocHintSign', s:yellow, '', '')
 call s:SetHighlight('CocInfoSign', s:green, '', '')
 
+" Tree-Sitter
+call s:SetHighlight('TSAnnotation', s:purple, '', '')
+call s:SetHighlight('TSAttribute', s:purple, '', '')
+call s:SetHighlight('TSBoolean', s:orange, '', '')
+call s:SetHighlight('TSCharacter', s:green, '', '')
+call s:SetHighlight('TSComment', s:comments, '', '')
+call s:SetHighlight('TSConditional', s:cyan, '', '')
+call s:SetHighlight('TSConstant', s:orange, '', '')
+call s:SetHighlight('TSConstBuiltin', s:paleblue, '', '')
+call s:SetHighlight('TSConstMacro', s:paleblue, '', '')
+call s:SetHighlight('TSConstructor', s:yellow, '', '')
+call s:SetHighlight('TSError', s:red, '', '')
+call s:SetHighlight('TSException', s:cyan, '', '')
+" call s:SetHighlight('TSField', s:red, '', '')
+call s:SetHighlight('TSFloat', s:purple, '', '')
+call s:SetHighlight('TSFunction', s:blue, '', '')
+call s:SetHighlight('TSFuncBuiltin', s:paleblue, '', '')
+call s:SetHighlight('TSFuncMacro', s:blue, '', '')
+call s:SetHighlight('TSInclude', s:cyan, '', '')
+" call s:SetHighlight('TSKeyword', s:paleblue, '', '') " Unsure about the color
+call s:SetHighlight('TSKeywordFunction', s:purple, '', '')
+call s:SetHighlight('TSMethod', s:blue, '', '')
+" call s:SetHighlight('TSNamespace', s:blue, '', '') " we may set this (golang?)
+call s:SetHighlight('TSOperator', s:cyan, '', '')
+call s:SetHighlight('TSType', s:yellow, '', '')
+" call s:SetHighlight('TSTypeBuiltin', s:paleblue, '', '') " Unsure about the color
+
 " Neovim terminal colors
 if has('nvim')
   let g:terminal_color_background = s:bg.gui
